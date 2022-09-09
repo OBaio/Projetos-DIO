@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Aprendendo HTML - básico</title>
+
+</head>
+<body>
+
+	<h1 id="home"><font style="font-style: italic;">Aprendendo HTML - básico</font></h1>
+	<hr/>
+
+	<nav>
+		<ul>
+			<li><a href="#1" id="">Inspetor de elementos</a></li>	
+			<li><a href="#2" id="">Estrutura básica HTML</a></li>
+			<li><a href="#3" id="">O que são as tags?</a></li>
+			<li><a href="#4" id="">Os atributos das tags</a></li>
+			<li><a href="#5" id="">Elementos de texto</a></li>
+			<li><a href="#6" id="">Listas ordenadas</a></li>
+			<li><a href="#7" id="">Listas não ordenadas</a></li>
+			<li><a href="#8" id="">Trabalhando com links</a></li>
+		</ul>
+	</nav>
+
+	<hr/>
+
+		<h2 id="1">Inspetor de elementos</h2>	
+
+			<blockquote cite="https://reulison.com.br/inspecionar-elemento/">
+
+			<p>Inspecionar Elemento é uma maneira perfeita de descobrir o que se encontra por trás de um website, entender porque aquela página está quebrando, simular a mudança de uma cor ou fonte. É uma arma que o seu navegador possui e talvez você não saiba como usar. A maioria dos navegadores – incluindo o Mozilla Firefox e o Safari da Apple – possui uma ferramenta de Inspecionar Elemento, enquanto o Internet Explorer (incluindo o Edge Browser) da Microsoft e o Chrome da Google incluem um conjunto de ferramentas para desenvolvedores.
+			</p>
+			<p>Se você nunca deu uma olhada no código de um site só por curiosidade, pode se perguntar por que deveria aprender a usar o Inspecionar Elemento.</p>
+
+				<ol>
+					<li> Designers: Gostaria de visualizar como ficaria a aparência de um site em dispositivos móveis? Ou deseja testar diferentes tons de verde em um botão de compra? Você pode fazer ambos em segundos com o Inspecionar Elemento.</li>
+					<li> Marketeiros: Curioso para saber como o seu ou o site da sua empresa ficaria com um texto, cor ou imagem diferente sem ter que pedir a um desenvolvedor para fazer isso, ou quer saber se o carregamento do seu site está muito lento para o PageSpeed Insights? Use o Inspecionar elemento para mostrar ambos.</li>
+					<li> Jornalistas: Usando o Inspecionar Elemento, você pode alterar qualquer texto em um site em apenas um segundo. Assim, você pode conferir como seu título ou texto ficaria antes mesmo de ser publicado.</li>
+					<li> Analista de Suporte: Precisa de uma maneira prática de informar aos desenvolvedores o que precisa ser corrigido em um site? Inspecionando o elemento de uma página você consegue mostrar um exemplo do que está falando. </li>
+				</ol>
+			
+			<p>Para esses e outros casos, o Inspecionar Elemento é uma ferramenta útil para guardar no seu arsenal. Ele faz parte do Developer Tools (Ferramentas para o Desenvolvedor), que inclui vários recursos extras: um Console para executar código, a opção Exibir código-fonte da página para ver apenas o código bruto por trás de um site, a guia Sources com uma lista de todos os arquivos carregados em um site e muito mais.</p>
+
+			<p>Existem algumas maneiras de acessar o Google Chrome Inspect Element. Basta abrir um site que você deseja tentar editar e abra o Inspecionar Elemento de uma destas três maneiras:</p>
+
+				<ol>
+					<li>Clique com o botão direito do mouse em qualquer lugar do website, bem na parte inferior do menu exibido, você verá Inspecionar. Clique.</li>
+					<li>Clique no menu (o ícone com três pontos empilhados) à direita da barra de ferramentas do Google Chrome, clique em Mais ferramentas e selecione Ferramentas do desenvolvedor. Prefere atalhos de teclado? Pressione CMD + Option + I em um Mac ou F12 em um PC para abrir o Inspect Element sem clicar em nada. </li>
+				</ol>
+
+					<h6><a href="#home">Voltar</a></h6>
+
+			</blockquote>
+
+	<hr/>
+
+		<h2 id="2">Estrutura básica HTML</h2>
+
+		<blockquote cite="https://tableless.github.io/iniciantes/manual/html/estruturabasica.html#:~:text=Esta%20estrutura%20é%20quase%20que,mas%20é%20bom%20que%20faça.">
+
+			<p> O documento HTML sempre inicia com o que chamamos de estrutura básica. Esta estrutura é quase que imutável. Sempre será dessa forma e você sempre, sempre começará seu HTML começando por esse código. Geralmente os editores como o Sublime Text já tem atalhos para iniciar os documentos HTMLs com essa estrutura, logo, você não precisa se preocupar em decorá-la, mas é bom que faça. Veja abaixo como ela se inicia:</p>
+
+			<img src="http://colinhas.herokuapp.com/maria-fernanda/img/htmlbasic.png" width="400px">
+
+		<p>É possível compreender o documento em HTML de uma maneira muito simples, através de uma divisão de blocos das tags essenciais, conforme a a seguinte estrutura:
+
+			<ol>
+				<li>Definição do documento <strong>(doctype)</strong></li>
+				<li>Cabeça <strong>(head)</strong></li>
+				<li>Corpo <strong>(body)</strong></li>
+			</ol>
+
+		<h4>Doctype - Definindo o documento</h4>
+
+			<p>Uma coisa importante: <i>SEMPRE</i> deve existir o doctype, que é este código</p>
+
+			<p>O doctype não é uma tag <i>HTML</i>, mas uma instrução para o navegador e outros programas que podem ler seu site, que o código encontrado ali é um código <i>HTML</i>. Assim eles sabem o que fazer para mostrar seu site da melhor forma possível. Lembre-se: o doctype é <i>OBRIGATÓRIO</i> e deve ser sempre a <i>PRIMEIRA LINHA</i> do seu documento.</p>
+
+		<h4>Head</h4>
+			<p>Contém informações que não são transpostas visivelmente para o usuário/leitor do documento. São dados implícitos, de uso e controle do documento: vinculação com outros arquivos, aplicação de lógica de programação de scripts e metadados. Na prática, todo o conteúdo do cabeçalho fica delimitado entre a abertura e fechamento tag head.</p>
+
+		<h4>Body</h4>
+			<p>Trata-se do documento em si, ou seja, a informação legível para o usuário/leitor do documento. É todo e qualquer texto que se deseja apresentar, assim como toda e qualquer forma de mídia de saída (imagens, sons, miniaplicativos embutidos, conteúdo multimídia, etc). Além disso, toda a apresentação de entrada de dados (formulários) também se aplica neste seção do documento. Na prática, o corpo do documento é delimitado pelo par de tags body.</p>
+
+			<p>Este é o preceito básico que deve estar muito bem claro para você: <sub>onde as marcações se aplicam</sub>, e quais são os resultados deste modelo. Por exemplo: se vocês deseja informar conteúdo textual para saída legível ao usuário do seu sistema web, esta marcação deverá obrigatoriamente estar no bloco do corpo da página. Ainda: para definir qual o tipo de codificação da página (uma meta informação do documento), esta deve obrigatoriamente estar marcada no cabeçalho do mesmo documento. <sup>Dentro do elemento BODY sua estrutura de página terá os elementos semânticos da construção da sua página</sup>, onde serão declarados e identificados cabeçalhos, rodapé, conteúdo principal, etc.</p>
+
+				<h6><a href="#home">Voltar</a></h6>
+
+		</blockquote>
+
+
+		<h2 id="3">O que são Tags?</h2>
+
+			<p>Tags são o conjunto de caracteres que formam um elemento, ou seja, quando nos referenciamos à Tag "p" <del>estamos falando disso:</del></p>
+
+			<p>Existem dois tipos de Tags, as que necessitam de fechamento e as que não necessitam de fechamento.</p>
+
+			<p>Para as que necessitam de fechamento, utilizamos o sinal de menor <mark>( < )</mark>, seguido do nome do elemento e o sinal de maior <mark>( > )</mark> para abertura. Para fechamento, utilizamos o sinal de menor <mark>( < )</mark>, seguido de barra <mark>( / )</mark>, nome do elemento e o sinal de maior <mark>( > )</mark>.</p>
+
+			<h6><a href="#home">Voltar</a></h6>
+
+		<h2 id="4">Os atributos das tags</h2>
+
+			<p>Atributos são comandos ou informações específicas que damos a uma tag, para que ela faça tal comando, porém com algum detalhe ou variação específica, em relação a tag original sem atributos.</p>
+
+			<h6><a href="#home">Voltar</a></h6>
+
+		<h2 id="5">Elementos de texto</h2>
+
+			<p>Elementos de texto são construídos com uma etiqueta de abertura (<tag>) marcando o início do elemento, que pode ser incorporar alguns diversos atributos; uma quantidade de conteúdo textual, mas sem elementos (todas as etiquetas, a menos da etiqueta em questão, serão interpretadas como conteúdo); uma etiqueta de fechamento, na qual o nome do elemento é precedido por uma barra: </tag>. Em algumas versões do HTML, a etiqueta de fechamento é opcional para alguns elementos. A etiqueta de fechamento é obrigatória no XHTML.</p>
+
+			<p>Elementos e tags não são as mesmas coisas. As tags iniciam ou terminam um elemento no código-fonte, enquanto os elementos fazem parte do DOM, o modelo do documento para exibir a página no navegador.</p>
+
+			<h6><a href="#home">Voltar</a></h6>
+
+
+		<h2 id="6">Listas ordenadas</h2>
+
+			<p>O Elemento HTML <abbr title="ordered list">ol</abbr> (ou Elemento HTML de lista ordenada) representa uma lista de itens ordenados. De forma característica esses itens ordenados em uma lista são mostrados com uma contagem que os precede, que pode ser de qualquer tipo, como numerais, letras, algarismos romanos, ou simples símbolos.</p>
+
+			<h6><a href="#home">Voltar</a></h6>
+
+		<h2 id="7">Listas não ordenadas</h2>
+
+			<p>O elemento HTML <abbr title="unordered list">ul</abbr> (ou elemento HTML de Lista desordenada) representa uma lista de itens sem ordem rígida, isto é, uma coleção de itens que não trazem uma ordenação numérica e as suas posições, nessa lista, são irrelevantes. Caracteristicamente, os itens em uma lista desordenada são exibidos com um marcador que pode ter várias formas, como um ponto, um círculo, ou um quadrado.</p>
+
+			<h6><a href="#home">Voltar</a></h6>
+
+		<h2 id="8">Trabalhando com links</h2>
+
+			<p>Os hiperlinks são uma das inovações mais interessantes que a Web oferece. Bem, eles são uma característica da Web desde o início, mas são o que torna a Web como ela é — eles nos permitem vincular nossos documentos a qualquer outro documento (ou outro recurso) que queremos. Também podemos vincular para partes específicas de documentos e podemos disponibilizar aplicativos em um endereço web simples (em contraste com aplicativos nativos, que devem ser instalados e tantas outras coisas). Qualquer conteúdo da web pode ser convertido em um link, para que, quando clicado (ou ativado de outra forma) fará com que o navegador vá para outro endereço</p>
+
+			<h6><a href="#home">Voltar</a></h6>
+
+
+		<p><del><small><u>O conteúdo apresentado nesse site terá um custo de R$100,00 ao final da leitura</u></small></del></p>
+
+</body>	
+</html>
